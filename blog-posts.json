@@ -2,10 +2,10 @@
   {
     "id": "blog_v2.md",
     "title": "个人网站V2",
-    "description": "个人网站V2重构记录。基于refinejs的示例开发。",
+    "description": "个人网站V2重构记录。基于refinedev的示例开发。",
     "date": "2023-07",
     "url": "#/blog/blog_v2.md",
-    "body": "个人网站V2重构记录。基于refinejs的示例开发。",
+    "body": "个人网站V2重构记录。基于refinedev的示例开发。",
     "createdAt": "2023-07-01",
     "tagList": [
       "blog",

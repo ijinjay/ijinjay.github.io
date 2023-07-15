@@ -1,7 +1,7 @@
 author: Jin Jay
 title: 个人网站V2
 Date: 2023-07
-description: 个人网站V2重构记录。基于refinejs的示例开发。
+description: 个人网站V2重构记录。基于refinedev的示例开发。
 keywords: blog
           refine
 
@@ -52,7 +52,7 @@ export interface IArticle {
 上述接口为展示博客列表的接口，需要解析博客文件，生成对应的数据。这里基于python的markdown库来实现。在每次部署的时候解析一次，生成对应的json文件，供前端使用。
 
 首先，博客需要在正式内容前添加如下meta信息:
-```markdown
+```yaml
 author: ijinjay
 title: test
 date: 2023-07
@@ -253,8 +253,28 @@ return  (<MathJaxContext config={mathjaxConfig}>
 至此，每个博客的展示就完成了。支持了代码高亮，markdown内部html标签和数学公式。
 
 ## 4. 博客部署
-部署为Github Pages, 通过Github Actions来实现自动化部署。部署脚本如下：
-```yaml
+部署为Github Pages, 参考 [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
+
+安装`gh-pages`:
+```bash
+npm install --save-dev gh-pages
 ```
 
+配置`package.json`
+```yaml
+"homepage": "https://{yourname}.github.io",
 
+"scripts": {
+   "predeploy": "refine build",
+   "deploy": "gh-pages -d build -t true",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+```
+
+运行 `npm run deploy` 会调用 `refine build` 来生成静态文件，然后将静态文件推送到 `gh-pages` 分支。文件夹`public` 下的所有文件也会打包到该目录下。
+
+注意需要添加 `-t true` 选项，可以将 `build/.nojekll` 文件添加到 `gh-pages` 分支，来禁止github默认的jekyll处理。
+
+
+# 小结
+个人网站V2重构完成，基于refinedev的示例开发，可以很方便的进行二次开发。
