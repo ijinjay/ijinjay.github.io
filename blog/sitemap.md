@@ -2,8 +2,7 @@ Title:   让搜索引擎索引你的网站
 description:   设置一些内容让搜索引擎索引你的网站。
 Author: Jin Jay
 Date:    2014-10
-keywords: webmaster
-          网站站长
+keywords: webmaster,网站站长
           
 
 ## Robots.txt

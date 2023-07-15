@@ -2,9 +2,7 @@ author: Jin Jay
 title: Android Gradle Cmake
 Date: 2017-04
 description: 使用Android Studio进行Android Native应用开发，选用Gradle和CMake构建工具的组合。介绍如何添加预构建的第三方库。
-keywords: Android
-          cmake
-          gradle
+keywords: Android,cmake,gradle
 
 本文介绍使用Android Studio进行Android的C/C++项目开发。构建工具使用Gradle和CMake的组合，这个组合是Android Studio的默认组合。主要讲解添加第三方预构建库，及使用方法。
 

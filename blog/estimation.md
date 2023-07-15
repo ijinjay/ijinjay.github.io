@@ -2,12 +2,7 @@ Title: 状态估计
 description:  示例介绍状态测量估计。
 Author: Jin Jay
 Date:    2017-07
-keywords: Orientation Estimation
-          Extended Kalman Filtering
-          Example
-          IMU
-          状态测量
-          惯性测量
+keywords: Orientation Estimation,Extended Kalman Filtering,Example,IMU,状态测量,惯性测量
 
 # 状态估计&mdash;使用智能手机的加速计、陀螺仪和磁力计估计手机的姿态
 

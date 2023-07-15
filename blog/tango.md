@@ -3,9 +3,7 @@ title: Project Tango
 Date: 2017-03
 description: 谷歌Project Tango使用文档的中文翻译。
 Image:  images/APIDiagram.png
-keywords: Project Tango
-          增强现实
-          Augmented Reality
+keywords: Project Tango,增强现实,Augmented Reality
 
 
 

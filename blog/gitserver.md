@@ -2,8 +2,7 @@ Title:  Git服务器搭建
 Authors: Jin Jay
 Date:    2014-11
 Description: 搭建git服务器，拥有自己的远程代码仓库。
-keywords: git server debian
-          git服务器搭建
+keywords: git server debian,git服务器搭建
 
 
 # Git服务器搭建

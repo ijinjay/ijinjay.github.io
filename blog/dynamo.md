@@ -2,8 +2,7 @@ author: Jin Jay
 title: Amazon Dynamo
 Date: 2016-05
 description: Amazon Dynamo调研，简介。
-keywords: Amazon Dynamo
-          DynamoDB
+keywords: Amazon Dynamo,DynamoDB
 
 
 # CAP理论

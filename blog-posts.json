@@ -225,7 +225,6 @@
     "createdAt": "2015-11-01",
     "tagList": [
       "Gensim",
-      "Python",
       "Tf-Idf",
       "LSA",
       "LDA",
@@ -286,7 +285,9 @@
     "body": "介绍iOS上的SceneKit与OpenGLES集成————个人使用Vuforia时遇到的一个问题。",
     "createdAt": "2015-03-01",
     "tagList": [
-      "iOS SceneKit, iOS OpenGLES, SceneKit OpenGL"
+      "iOS SceneKit",
+      "iOS OpenGLES",
+      "SceneKit OpenGL"
     ],
     "slug": "SceneKit.md"
   },
@@ -568,7 +569,9 @@
     "url": "#/blog/Probability.md",
     "body": "概率论相关知识：全概率公式、分布函数、随机变量分布、数字特征、中心极限定理、矩估计等等。",
     "createdAt": "2014-09-01",
-    "tagList": [],
+    "tagList": [
+      "概率论"
+    ],
     "slug": "Probability.md"
   },
   {
@@ -593,7 +596,8 @@
     "body": "Django与Tornado的简单比较。",
     "createdAt": "2014-09-01",
     "tagList": [
-      "Django, Tornado"
+      "Django",
+      "Tornado"
     ],
     "slug": "Django&Tornado.md"
   },
@@ -606,7 +610,7 @@
     "body": "2014年9月23日，在北京中科院自动化所自动化大厦参与的保研面试情况整理。",
     "createdAt": "2014-09-01",
     "tagList": [
-      "Interview  AC",
+      "Interview AC",
       "自动化所面试"
     ],
     "slug": "zidonghua.md"
@@ -680,7 +684,8 @@
     "body": "介绍使用python-markdown.",
     "createdAt": "2014-08-01",
     "tagList": [
-      "python markdown"
+      "python",
+      "markdown"
     ],
     "slug": "getFile.md"
   },

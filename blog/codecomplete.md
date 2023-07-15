@@ -3,8 +3,7 @@ author: Jin Jay
 image:  images/levelsOfDesign.png
 Date:    2014-10
 description: Code Complete《代码大全》，经典著作书摘，主要关于软件工程，如何构建软件，如何编写代码，应该有什么样的编程风格。
-keywords: code complete
-          代码大全
+keywords: code complete,代码大全
 
 
 # 代码大全

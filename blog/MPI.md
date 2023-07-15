@@ -2,8 +2,7 @@ Author: Jin Jay
 Title: MPI并行程序设计
 Date: 2014-10
 description: MPI并行程序设计相关学习。学习资料来源：清华大学《高性能计算之并行编程技术——MPI并行程序设计》。
-keywords: MPI
-          Mac OS
+keywords: MPI,Mac OS
 
 # MPI并行程序设计
 学习资料主要来源：清华大学《高性能计算之并行编程技术——MPI并行程序设计》。

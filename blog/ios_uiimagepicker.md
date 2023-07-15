@@ -2,8 +2,7 @@ author: Jin Jay
 title: iOS隐藏状态栏
 Date: 2015-01
 description: 使用UIImagePickerController对iOS照相机和相册的相关操作。
-keywords: iOS照相机
-        UIImagePickerController
+keywords: iOS照相机,UIImagePickerController
 
 **UIImagePickerController**
 有两种source类型：

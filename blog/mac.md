@@ -3,8 +3,7 @@ description: Mac基本操作：使用updatedb、使用gdb、快速查找mdfind�
 Date: 2014-11
 author: Jin Jay
         靳杰
-keywords: Mac updatedb
-          Mac OS X gdb
+keywords: Mac updatedb,Mac OS X gdb
 
 # Mac系统上的基本操作
 ## updatedb

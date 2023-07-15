@@ -2,10 +2,7 @@ Title: ROVIO解析
 description:  ETHZ ASL 基于EKF的鲁棒视觉惯性测量分析。
 Author: Jin Jay
 Date:    2017-07
-keywords: ROVIO
-          Visual Inertial Odometry
-          EKF
-          SLAM
+keywords: ROVIO,Visual Inertial Odometry,EKF,SLAM
 
 
 # ROVIO解析

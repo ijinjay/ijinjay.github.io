@@ -2,7 +2,7 @@ Title: 	 Use MarkDownPy
 Author: Jin Jay
 Date:    2014-08
 description: 介绍使用python-markdown.
-keywords: python markdown
+keywords: python,markdown
 
 ## pygmentize 产生代码高亮的css文件
 ```

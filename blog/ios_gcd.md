@@ -2,8 +2,7 @@ author: Jin Jay
 title: iOS多线程GCD
 Date: 2015-01
 description: iOS应用开发多线程GCD方式的描述。
-keywords: iOS GCD
-          iOS多线程
+keywords: iOS GCD,iOS多线程
 
 参考资源：http://blog.csdn.net/totogo2010/article/details/8016129
 ## 简介

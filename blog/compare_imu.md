@@ -2,10 +2,7 @@ Title: IMU性能度量
 description:  标定移动设备上的惯性传感器，介绍误差来源及对iPhone 6和iPad Pro上IMU的对比分析。
 Author: Jin Jay
 Date:    2017-07
-keywords: IMU
-          Allan Variance
-          Error
-          Calibration
+keywords: IMU,Allan Variance,Error,Calibration
 
 # iPhone6、iPad Pro惯性传感器性能对比
 ## 参数

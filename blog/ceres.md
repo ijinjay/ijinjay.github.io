@@ -2,9 +2,7 @@ author: Jin Jay
 title: Ceres使用
 Date: 2016-12
 description: Google非线性优化Ceres库的使用。
-keywords: Ceres
-		  Ceres Solver
-		  Ceres Bundle Adjustment
+keywords: Ceres,Ceres Solver,Ceres Bundle Adjustment
 
 # Ceres Solver使用
 ## 非线性最小二乘

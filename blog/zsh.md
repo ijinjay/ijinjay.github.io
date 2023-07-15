@@ -2,10 +2,7 @@ author: Jin Jay
 title: 非特权用户安装zsh和Oh-My-Zsh
 Date: 2016-04
 description: 非特权用户安装zsh，并设定为默认shell，并安装Oh My Zsh插件。
-keywords: zsh
-          oh-my-zsh
-          without root
-          非特权用户
+keywords: zsh,oh-my-zsh,without root,非特权用户
 
 # 安装zsh
 ## 下载zsh源代码

@@ -2,9 +2,7 @@ Title:   编写正则表达式引擎
 description:  编写一个简单的正则表达式引擎，支持：转义字符、重复匹配、选择、分支和分组。
 Author: Jin Jay
 Date:    2014-10
-keywords: 正则表达式引擎
-          regular expression engine
-          2014种子杯初赛
+keywords: 正则表达式引擎,regular expression engine,2014种子杯初赛
 
 
 

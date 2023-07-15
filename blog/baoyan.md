@@ -2,9 +2,7 @@ author: Jin Jay
 title: 浙大保研面试
 Date: 2014-09
 description: 浙江大学计算机保研面试经过记录。
-keywords: Interview
-          浙大保研
-          计算机
+keywords: Interview,浙大保研,计算机
 
 ##  浙大面试准备
 

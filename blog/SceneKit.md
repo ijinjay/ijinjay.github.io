@@ -2,7 +2,7 @@ author: Jin Jay
 title: SceneKit与OpenGL结合
 Date: 2015-03
 description: 介绍iOS上的SceneKit与OpenGLES集成————个人使用Vuforia时遇到的一个问题。
-keywords: iOS SceneKit, iOS OpenGLES, SceneKit OpenGL
+keywords: iOS SceneKit,iOS OpenGLES,SceneKit OpenGL
 
 ### 第一步，初始化EAGLContext、SCNScene和SCNRenderer
 

@@ -2,12 +2,7 @@ title: 集群智能
 author: Jin Jay
 Date: 2016-01
 description: 集群智能，蚁群优化算法、粒子群优化算法、蜂群算法等。
-keywords: 集群智能
-          PSO
-          蚁群优化算法
-          ACO
-          粒子群优化算法
-          蜂群算法
+keywords: 集群智能,PSO,蚁群优化算法,ACO,粒子群优化算法,蜂群算法
 
 
 # <center>集群智能</center>

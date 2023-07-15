@@ -2,9 +2,7 @@ author: Jin Jay
 title: CMake使用
 Date: 2017-04
 description: CMake文档中文翻译，使用入门。
-keywords: cmake
-          中文翻译
-          使用入门
+keywords: cmake,中文翻译,使用入门
 
 # cmake构建系统
 基于CMake的构建系统组织为一系列的高层次的逻辑目标。每一个目标对应一个可执行文件或库文件，或是一个包含自定义命令的自定义目标文件。目标之间依赖关系在cmake构建系统中表示,来确定构建的顺序和响应改变的规则。

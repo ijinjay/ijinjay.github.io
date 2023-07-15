@@ -2,8 +2,7 @@ Title:   编写浏览器显示引擎
 description:  编写一个简单的浏览器显示引擎，支持：解析html、解析css、布局、绘制图片。
 Author: Jin Jay
 Date:    2014-10
-keywords: 浏览器显示引擎
-          browser engine
+keywords: 浏览器显示引擎,browser engine
 
 
 ## 程序设计及各模块的功能说明

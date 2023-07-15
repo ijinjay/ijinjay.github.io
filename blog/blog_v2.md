@@ -2,8 +2,7 @@ author: Jin Jay
 title: 个人网站V2
 Date: 2023-07
 description: 个人网站V2重构记录。基于refinedev的示例开发。
-keywords: blog
-          refine
+keywords: blog,refine
 
 # 背景
 前端技术发展迅速，有一大批的框架可以使用，减轻开发人员的负担，提升效率。过去我自己的个人博客混合html, js 和 css ，纯手工制作，改动比较难，可复用性也很弱。制作了多个模版，并用python2 来进行模版关键词替换来实现，部署的时候需要生成很多重复的html静态文件，占用较多存储。平时开发多在后端，前端技能树也希望能更新一下。所以对个人博客进行一次整体的更新。

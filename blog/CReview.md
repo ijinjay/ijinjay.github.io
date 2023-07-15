@@ -3,12 +3,7 @@ Author: Jin Jay
 Date:    2014-09
 codehilite: true
 description: C语言知识点整理：指针、枚举、联合体、变长参数函数、文件操作、宏等等。
-keywords: C语言
-          函数指针
-          枚举
-          联合体
-          宏定义
-          C文件操作
+keywords: C语言,函数指针,枚举,联合体,宏定义,C文件操作
 
 ## 保研复试C语言复习
 ### C与指针

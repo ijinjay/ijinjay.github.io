@@ -2,8 +2,7 @@ title: 改善Python程序
 author: Jin Jay
 Date: 2014-11
 description: 《编写高质量代码————改善Python程序的91个建议》：主要记录编写高质量Python程序需要注意的地方。
-keywords: improve python
-            改善Python程序
+keywords: improve python,改善Python程序
 
 
 《编写高质量代码--改善Python程序的91个建议》：主要记录编写高质量Python程序需要注意的地方(个人觉得有用的建议)。

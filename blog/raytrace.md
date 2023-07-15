@@ -2,9 +2,7 @@ author: Jin Jay
 title: 光线追踪
 Date: 2016-04
 description: 计算机图形学课程作业，光线追踪模拟。
-keywords: 光线追踪
-          ray trace
-          javascript
+keywords: 光线追踪,ray trace,javascript
 
 
 <h1> <center>光线追踪</center> </h1>

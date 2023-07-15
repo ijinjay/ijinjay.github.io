@@ -3,10 +3,7 @@ Brief:   New Swift Project Crash at startup.
 Authors: Jin Jay
 Description: 解决新建Swift项目真机运行时报错：dyld: Library not loaded: @rpath/libswiftCore.dylib。
 Date:    2015-08
-keywords:   dyld
-            swift
-            rpath
-            dyld: Library not loaded: @rpath/libswiftCore.dylib
+keywords:   dyld,swift,rpath,dyld: Library not loaded: @rpath/libswiftCore.dylib
 
 
 ### dyld: Library not loaded: @rpath/libswiftCore.dylib Error

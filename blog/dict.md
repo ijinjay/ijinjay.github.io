@@ -1,9 +1,7 @@
 title: C语言实现字典结构
 description: C语言实现字典结构(dict)，字典结构是键值结构，可以通过关键字获取相应的值，很多语言自带此种结构，比如Python。这里我们使用C语言实现一个字典数据类型。
 Date: 2014-11
-keywords: C语言 字典
-          C dict
-          C redis dict
+keywords: C语言 字典,C dict,C redis dict
 
 
 # 简介

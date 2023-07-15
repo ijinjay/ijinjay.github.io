@@ -2,8 +2,7 @@ author: Jin Jay
 title: LinkedIn Samza
 Date: 2016-05
 description: LinkedIn Samza所使用的故障恢复方法。
-keywords: LinkedIn
-          Samza
+keywords: LinkedIn,Samza
 
 调研当前的流数据处理系统所使用的故障恢复方法，比较优缺点。
 

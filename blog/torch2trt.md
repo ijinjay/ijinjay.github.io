@@ -2,9 +2,7 @@ Title: Torch2TRT使用
 description:  将pytorch网络转为TensorRT网络的torch2trt加速库的简介，使用及更改pytorch代码适配示例，docker中的运行示例。
 Author: Jin Jay
 Date:    2020-10
-keywords: Torch2TRT
-          TensorRT
-          Pytorch
+keywords: Torch2TRT,TensorRT,Pytorch
 
 
 # Torch2TRT简介

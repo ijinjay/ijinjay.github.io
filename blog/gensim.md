@@ -2,14 +2,7 @@ title:   GenSim
 authors: Jin Jay
 Date:    2015-11
 description: Gensim, Python文档处理库，用于机器学习等数据预处理。
-keywords: Gensim
-          Python
-          Tf-Idf
-          LSA
-          LDA
-          RP
-          机器学习
-          文本处理
+keywords: Gensim,Tf-Idf,LSA,LDA,RP,机器学习,文本处理
 
 
 # Gensim文档

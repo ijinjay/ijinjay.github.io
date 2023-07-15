@@ -2,8 +2,7 @@ author: Jin Jay
 title: iOS隐藏状态栏
 Date: 2015-01
 description: iOS应用开发，隐藏状态栏。
-keywords: iOS开发
-          隐藏状态栏
+keywords: iOS开发,隐藏状态栏
 
 ## 方法一
 在ViewController中，调用相应的方法。
