@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /brief/
+Disallow: /markdownPreview/
+Disallow: /templates/
+

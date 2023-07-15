@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="apple-mobile-web-app-title" content="三周年快乐" />
+
+    <title>三周年快乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: black;
+        min-height: 100%;
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons",
+          "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      }
+
+      .wrap {
+        position: relative;
+        height: 100%;
+        min-height: 500px;
+        padding-bottom: 20px;
+      }
+
+      .game {
+        transform-style: preserve-3d;
+        perspective: 500px;
+        min-height: 100%;
+        height: 100%;
+      }
+
+      @-webkit-keyframes matchAnim {
+        0% {
+          background: #bcffcc;
+        }
+
+        100% {
+          background: white;
+        }
+      }
+
+      @keyframes matchAnim {
+        0% {
+          background: #bcffcc;
+        }
+
+        100% {
+          background: white;
+        }
+      }
+
+      .card {
+        float: left;
+        width: 16.66666%;
+        height: 25%;
+        padding: 5px;
+        text-align: center;
+        display: block;
+        perspective: 500px;
+        position: relative;
+        cursor: pointer;
+        z-index: 50;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      @media (max-width: 800px) {
+        .card {
+          width: 25%;
+          height: 16.666%;
+        }
+      }
+
+      .card .inside {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transform-style: preserve-3d;
+        transition: 0.4s ease-in-out;
+        background: white;
+      }
+
+      .card .inside.picked,
+      .card .inside.matched {
+        transform: rotateY(180deg);
+      }
+
+      .card .inside.matched {
+        -webkit-animation: 1s matchAnim ease-in-out;
+        animation: 1s matchAnim ease-in-out;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+
+      .card .front,
+      .card .back {
+        border: 1px solid black;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+      }
+
+      .card .front img,
+      .card .back img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-height: 100%;
+      }
+
+      .card .front {
+        transform: rotateY(-180deg);
+      }
+
+      @media (max-width: 800px) {
+        .card .front {
+          padding: 5px;
+        }
+      }
+
+      .card .back {
+        transform: rotateX(0);
+      }
+
+      @media (max-width: 800px) {
+        .card .back {
+          padding: 10px;
+        }
+      }
+
+      .modal-overlay {
+        display: none;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .modal {
+        display: none;
+        position: relative;
+        width: 500px;
+        height: 400px;
+        max-height: 90%;
+        max-width: 90%;
+        min-height: 380px;
+        margin: 0 auto;
+        background: transparent;
+        top: 80%;
+        transform: translateY(-50%);
+        padding: 30px 10px;
+      }
+
+      .modal .winner {
+        font-size: 80px;
+        text-align: center;
+		font-weight: bold;
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons",
+          "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        color: white;
+        /* text-shadow: 0px 3px 0 black; */
+      }
+
+      @media (max-width: 480px) {
+        .modal .winner {
+          font-size: 60px;
+        }
+      }
+
+      .modal .restart {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons",
+          "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        margin: 30px auto;
+        padding: 20px 30px;
+        display: block;
+        font-size: 30px;
+        border: none;
+        background: #ed2b2b;
+        /* border: 1px solid #222; */
+        border-radius: 5px;
+        color: white;
+        text-shadow: 0px 1px 0 black;
+        cursor: pointer;
+      }
+
+      .modal .restart:hover {
+        background: #f15a59;
+      }
+
+      .modal .message {
+        text-align: center;
+		color: white;
+      }
+
+      .modal .message a {
+        text-decoration: none;
+        color: #28afe6;
+        font-weight: bold;
+      }
+
+      .modal .message a:hover {
+        color: #56c0eb;
+        border-bottom: 1px dotted #56c0eb;
+      }
+
+      .modal .share-text {
+        text-align: center;
+        margin: 10px auto;
+      }
+
+      .modal .social {
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      .modal .social li {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      .modal .social li:last-child {
+        margin-right: 0;
+      }
+
+      .modal .social li a {
+        display: block;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .modal .social li a.facebook {
+        background: #3b5998;
+      }
+
+      .modal .social li a.facebook:hover {
+        background: #4c70ba;
+      }
+
+      .modal .social li a.google {
+        background: #d34836;
+      }
+
+      .modal .social li a.google:hover {
+        background: #dc6e60;
+      }
+
+      .modal .social li a.twitter {
+        background: #4099ff;
+      }
+
+      .modal .social li a.twitter:hover {
+        background: #73b4ff;
+      }
+
+      footer {
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+      }
+
+      footer .disclaimer {
+        line-height: 20px;
+        font-size: 12px;
+        color: #727272;
+        text-align: center;
+      }
+
+      @media (max-width: 767px) {
+        footer .disclaimer {
+          font-size: 8px;
+        }
+      }
+
+	  .rainbow-stripe {
+		  box-sizing: revert;
+	  }
+
+      .rainbow-preloader .rainbow-stripe:nth-child(1) {
+        border-color: #f15a5a;
+        clip: rect(0, 84px, 42px, 0);
+        height: 60px;
+        left: 48px;
+        -webkit-transform: rotate(180deg);
+        top: 48px;
+        width: 60px;
+        z-index: 5;
+        -webkit-animation: rainbow-in-out 5s 0.1s infinite;
+      }
+      .rainbow-preloader .rainbow-stripe:nth-child(1):before {
+        border: 3px solid #ed2b2b;
+        content: "";
+        display: block;
+        height: 48px;
+        width: 54px;
+      }
+
+      .rainbow-preloader .rainbow-stripe:nth-child(2) {
+        border-color: #f0c419;
+        clip: rect(0, 108px, 54px, 0);
+        height: 84px;
+        left: 36px;
+        -webkit-transform: rotate(180deg);
+        top: 36px;
+        width: 84px;
+        z-index: 4;
+        -webkit-animation: rainbow-in-out 5s 0.2s infinite;
+      }
+      .rainbow-preloader .rainbow-stripe:nth-child(2):before {
+        border: 3px solid #c9a20d;
+        content: "";
+        display: block;
+        height: 72px;
+        width: 78px;
+      }
+
+      .rainbow-preloader .rainbow-stripe:nth-child(3) {
+        border-color: #4eba6f;
+        clip: rect(0, 132px, 66px, 0);
+        height: 108px;
+        left: 24px;
+        -webkit-transform: rotate(180deg);
+        top: 24px;
+        width: 108px;
+        z-index: 3;
+        -webkit-animation: rainbow-in-out 5s 0.3s infinite;
+      }
+      .rainbow-preloader .rainbow-stripe:nth-child(3):before {
+        border: 3px solid #3c9958;
+        content: "";
+        display: block;
+        height: 96px;
+        width: 102px;
+      }
+
+      .rainbow-preloader .rainbow-stripe:nth-child(4) {
+        border-color: #2d95bf;
+        clip: rect(0, 156px, 78px, 0);
+        height: 132px;
+        left: 12px;
+        -webkit-transform: rotate(180deg);
+        top: 12px;
+        width: 132px;
+        z-index: 2;
+        -webkit-animation: rainbow-in-out 5s 0.4s infinite;
+      }
+      .rainbow-preloader .rainbow-stripe:nth-child(4):before {
+        border: 3px solid #237596;
+        content: "";
+        display: block;
+        height: 120px;
+        width: 126px;
+      }
+
+      .rainbow-preloader .rainbow-stripe:nth-child(5) {
+        border-color: #955ba5;
+        clip: rect(0, 180px, 90px, 0);
+        height: 156px;
+        left: 0px;
+        -webkit-transform: rotate(180deg);
+        top: 0px;
+        width: 156px;
+        z-index: 1;
+        -webkit-animation: rainbow-in-out 5s 0.5s infinite;
+      }
+      .rainbow-preloader .rainbow-stripe:nth-child(5):before {
+        border: 3px solid #774984;
+        content: "";
+        display: block;
+        height: 144px;
+        width: 150px;
+      }
+
+      .rainbow-preloader {
+        height: 90px;
+        left: 50%;
+        margin-left: -90px;
+        margin-top: -90px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        width: 180px;
+      }
+      .rainbow-preloader:before,
+      .rainbow-preloader:after {
+        background: linear-gradient(
+            45deg,
+            transparent 33.333%,
+            #6b9903 33.333%,
+            #6b9903 66.667%,
+            transparent 66.667%
+          ),
+          linear-gradient(
+            -45deg,
+            transparent 33.333%,
+            #6b9903 33.333%,
+            #6b9903 66.667%,
+            transparent 66.667%
+          );
+        background-size: 6px 34px;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 12px;
+        left: 0;
+        position: absolute;
+        width: 66px;
+        z-index: 10;
+      }
+      .rainbow-preloader:after {
+        left: auto;
+        right: 0;
+      }
+      .rainbow-preloader .rainbow-stripe {
+        border-width: 12px;
+        border-style: solid;
+        border-radius: 100%;
+        position: absolute;
+      }
+      .rainbow-preloader .rainbow-stripe:before {
+        border-radius: 100%;
+      }
+      .rainbow-preloader .shadow {
+        background: rgba(0, 0, 0, 0.2);
+        bottom: -1px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+        height: 2px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+        -webkit-animation: shadow-in-out 5s infinite;
+      }
+      .rainbow-preloader .shadow + .shadow {
+        left: 118px;
+        -webkit-animation-delay: 0.5s;
+      }
+
+	  .sky {
+        background: linear-gradient(#85a5cc 0, #d0e4f2 100%);
+        box-shadow: 0 0 20px #d0e4f2;
+        height: 44%;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+      }
+      .sky .cloud {
+        background: #ebf5fc;
+        border-radius: 200px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        height: 39px;
+        margin-right: -102px;
+        position: absolute;
+        right: 0%;
+        width: 102px;
+      }
+      .sky .cloud.variant-1 {
+        top: 5%;
+        -webkit-transform: scale(0.2);
+        -webkit-animation: clouds-in-out 16s 0s infinite linear;
+      }
+      .sky .cloud.variant-2 {
+        top: 61%;
+        -webkit-transform: scale(0.4);
+        -webkit-animation: clouds-in-out 17s 2s infinite linear;
+      }
+      .sky .cloud.variant-3 {
+        top: 22%;
+        -webkit-transform: scale(0.6);
+        -webkit-animation: clouds-in-out 18s 4s infinite linear;
+      }
+      .sky .cloud.variant-4 {
+        top: 58%;
+        -webkit-transform: scale(0.8);
+        -webkit-animation: clouds-in-out 19s 6s infinite linear;
+      }
+      .sky .cloud.variant-5 {
+        top: 39%;
+        -webkit-transform: scale(1);
+        -webkit-animation: clouds-in-out 20s 8s infinite linear;
+      }
+      .sky .cloud:before,
+      .sky .cloud:after {
+        background: #ebf5fc;
+        border-radius: 100px;
+        content: "";
+        height: 45px;
+        left: 10px;
+        position: absolute;
+        top: -10px;
+        width: 60px;
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        transform: rotate(30deg);
+      }
+      .sky .cloud:after {
+        height: 60px;
+        left: auto;
+        right: 12px;
+        top: -24px;
+        width: 60px;
+      }
+
+      .ground {
+        background: linear-gradient(#6e9e03 0, #4f7302 100%);
+        height: 57%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+
+      @-webkit-keyframes rainbow-in-out {
+        0% {
+          -webkit-transform: rotate(180deg);
+        }
+        33% {
+          -webkit-transform: rotate(360deg);
+        }
+        66% {
+          -webkit-transform: rotate(360deg);
+        }
+        100% {
+          -webkit-transform: rotate(540deg);
+        }
+      }
+      @-webkit-keyframes shadow-in-out {
+        0% {
+          opacity: 0;
+          width: 0;
+        }
+        33% {
+          opacity: 1;
+          width: 60px;
+        }
+        66% {
+          opacity: 1;
+          width: 60px;
+        }
+        100% {
+          opacity: 0;
+          width: 0;
+        }
+      }
+	  @-webkit-keyframes clouds-in-out {
+        0% {
+          right: 0%;
+        }
+        100% {
+          right: 105%;
+        }
+      }
+    </style>
+  </head>
+
+  <body translate="no">
+    <div class="wrap">
+      <div class="game"></div>
+
+      <div class="modal-overlay">
+        <div>
+			<div class="ground"></div>
+			<div class="sky">
+			  <div class="cloud variant-1"></div>
+			  <div class="cloud variant-2"></div>
+			  <div class="cloud variant-3"></div>
+			  <div class="cloud variant-4"></div>
+			  <div class="cloud variant-5"></div>
+			</div>
+			<div class="rainbow-preloader">
+			  <div class="rainbow-stripe"></div>
+			  <div class="rainbow-stripe"></div>
+			  <div class="rainbow-stripe"></div>
+			  <div class="rainbow-stripe"></div>
+			  <div class="rainbow-stripe"></div>
+			  <div class="shadow"></div>
+			  <div class="shadow"></div>
+			</div>
+        </div>
+
+        <div class="modal">
+          <h2 class="winner">三周年快乐</h2>
+          <button class="restart">重新开始</button>
+          <p class="message">JJ ❤️ KK</p>
+		</div>
+
+      </div>
+    </div>
+    <!-- End Wrap -->
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script id="rendered-js">
+      // Memory Game
+      // © 2014 Nate Wiley
+      // License -- MIT
+      // best in full screen, works on phones/tablets (min height for game is 500px..) enjoy ;)
+
+      (function () {
+        var Memory = {
+          init: function (cards) {
+            this.$game = $(".game");
+            this.$modal = $(".modal");
+            this.$overlay = $(".modal-overlay");
+            this.$restartButton = $("button.restart");
+            this.cardsArray = $.merge(cards, cards);
+            this.shuffleCards(this.cardsArray);
+            this.setup();
+          },
+
+          shuffleCards: function (cardsArray) {
+            this.$cards = $(this.shuffle(this.cardsArray));
+          },
+
+          setup: function () {
+            this.html = this.buildHTML();
+            this.$game.html(this.html);
+            this.$memoryCards = $(".card");
+            this.paused = false;
+            this.guess = null;
+            this.binding();
+          },
+
+          binding: function () {
+            this.$memoryCards.on("click", this.cardClicked);
+            this.$restartButton.on("click", $.proxy(this.reset, this));
+          },
+          // kinda messy but hey
+          cardClicked: function () {
+            var _ = Memory;
+            var $card = $(this);
+            if (
+              !_.paused &&
+              !$card.find(".inside").hasClass("matched") &&
+              !$card.find(".inside").hasClass("picked")
+            ) {
+              $card.find(".inside").addClass("picked");
+              if (!_.guess) {
+                _.guess = $(this).attr("data-id");
+              } else if (
+                _.guess == $(this).attr("data-id") &&
+                !$(this).hasClass("picked")
+              ) {
+                $(".picked").addClass("matched");
+                _.guess = null;
+              } else {
+                _.guess = null;
+                _.paused = true;
+                setTimeout(function () {
+                  $(".picked").removeClass("picked");
+                  Memory.paused = false;
+                }, 600);
+              }
+              if ($(".matched").length == $(".card").length) {
+                _.win();
+              }
+            }
+          },
+
+          win: function () {
+            this.paused = true;
+            setTimeout(function () {
+              Memory.showModal();
+              Memory.$game.fadeOut();
+            }, 1500);
+          },
+
+          showModal: function () {
+            this.$overlay.show();
+            this.$modal.fadeIn("slow");
+          },
+
+          hideModal: function () {
+            this.$overlay.hide();
+            this.$modal.hide();
+          },
+
+          reset: function () {
+            this.hideModal();
+            this.shuffleCards(this.cardsArray);
+            this.setup();
+            this.$game.show("slow");
+          },
+
+          // Fisher--Yates Algorithm -- https://bost.ocks.org/mike/shuffle/
+          shuffle: function (array) {
+            var counter = array.length,
+              temp,
+              index;
+            // While there are elements in the array
+            while (counter > 0) {
+              // Pick a random index
+              index = Math.floor(Math.random() * counter);
+              // Decrease counter by 1
+              counter--;
+              // And swap the last element with it
+              temp = array[counter];
+              array[counter] = array[index];
+              array[index] = temp;
+            }
+            return array;
+          },
+
+          buildHTML: function () {
+            var frag = "";
+            this.$cards.each(function (k, v) {
+              frag +=
+                '<div class="card" data-id="' +
+                v.id +
+                '"><div class="inside">\
+				<div class="front"><img src="' +
+                v.img +
+                '"\
+				alt="' +
+                v.name +
+                '" /></div>\
+				<div class="back"><img src="2021/front.png"\
+				alt="Codepen" /></div></div>\
+				</div>';
+            });
+            return frag;
+          },
+        };
+
+        var cards = [
+          {
+            name: "child",
+            img: "2021/1.png",
+            id: 1,
+          },
+          {
+            name: "snow",
+            img: "2021/2.png",
+            id: 2,
+          },
+          {
+            name: "xidan",
+            img: "2021/3.png",
+            id: 3,
+          },
+          {
+            name: "wukesong",
+            img: "2021/4.png",
+            id: 4,
+          },
+          {
+            name: "huawei",
+            img: "2021/5.png",
+            id: 5,
+          },
+          {
+            name: "theater",
+            img: "2021/6.png",
+            id: 6,
+          },
+          {
+            name: "summer_palace",
+            img: "2021/7.png",
+            id: 7,
+          },
+          {
+            name: "world_park",
+            img: "2021/8.png",
+            id: 8,
+          },
+          {
+            name: "wuhan",
+            img: "2021/9.png",
+            id: 9,
+          },
+          {
+            name: "gongwangfu",
+            img: "2021/10.png",
+            id: 10,
+          },
+          {
+            name: "jidi",
+            img: "2021/11.png",
+            id: 11,
+          },
+          {
+            name: "first",
+            img: "2021/12.png",
+            id: 12,
+          },
+        ];
+
+        Memory.init(cards);
+      })();
+    </script>
+  </body>
+</html>
