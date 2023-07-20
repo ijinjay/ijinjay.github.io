@@ -588,18 +588,18 @@
     "slug": "zhihu.md"
   },
   {
-    "id": "Django&Tornado.md",
+    "id": "Django_Tornado.md",
     "title": "Django & Tornado",
     "description": "Django与Tornado的简单比较。",
     "date": "2014-09",
-    "url": "#/blog/Django&Tornado.md",
+    "url": "#/blog/Django_Tornado.md",
     "body": "Django与Tornado的简单比较。",
     "createdAt": "2014-09-01",
     "tagList": [
       "Django",
       "Tornado"
     ],
-    "slug": "Django&Tornado.md"
+    "slug": "Django_Tornado.md"
   },
   {
     "id": "zidonghua.md",
