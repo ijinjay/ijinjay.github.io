@@ -31,7 +31,7 @@ Samza提供了一个checkpoint检查点的机制，即使一个job崩溃，或�
 # 参考文献
 [Apache Samza官方文档](https://samza.apache.org/learn/documentation/0.7.0)
 
-[TOC]
+
 
 
 

@@ -24,4 +24,3 @@ keywords: iOS SceneKit,iOS OpenGLES,SceneKit OpenGL
 	glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER];
 
-[TOC]

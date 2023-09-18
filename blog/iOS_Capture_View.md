@@ -15,4 +15,3 @@ keywords:   iOS7,iOS8,EAGLView,snapshot,OpenGLES view
 	}
 
 
-[TOC]

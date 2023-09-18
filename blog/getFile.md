@@ -27,5 +27,5 @@ print Template("hello ${data}!").render(data="world")
 % endfor
 ```
 
-[TOC]
+
 

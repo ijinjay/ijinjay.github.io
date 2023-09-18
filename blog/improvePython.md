@@ -937,6 +937,6 @@ print "Class of obj is {0}".format(demo.__class__)
 因此type就是一个元类，而且是python中最常见的元类，因为它是python中所有类的默认元类。
 
 
-[TOC]
+
 
 

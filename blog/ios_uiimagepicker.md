@@ -23,4 +23,3 @@ keywords: iOS照相机,UIImagePickerController
 
 如果想要获取对照相机更多的细节控制，可以使用AVFoundation提供的媒体IFA耐高温和摄像机控制方法。  想要获取对相册的更进一步的访问控制，可以使用Assets Libraray框架提供的相关操作。
 
-[TOC]

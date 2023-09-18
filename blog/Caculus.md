@@ -207,4 +207,4 @@ $$\sum \_{ n=0 }^{ \infty  }{ q^{ n } } =\begin{cases} q=1,\quad \quad 发散 \\
 ### p-级数
 $$\sum\_{n=0}^{\infty}{\frac{1}{n^p} } =\begin{cases} p=1,\quad\quad \quad发散 \\\\ 0< p <1,\quad 发散 \\\\ p>1,\quad\quad\quad 收敛 \end{cases}$$
 
-[TOC]
+

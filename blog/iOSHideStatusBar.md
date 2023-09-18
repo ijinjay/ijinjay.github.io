@@ -20,4 +20,3 @@ keywords: iOS开发,隐藏状态栏
     Status bar is initially hidden 设为 YES
     View controller-based status bar appearance 设为 NO
 
-[TOC]

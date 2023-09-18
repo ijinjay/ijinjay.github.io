@@ -79,4 +79,3 @@ alter event e_test on completion preserve enable;
 alter event e_test on completion preserve disable;
 ```
 
-[TOC]

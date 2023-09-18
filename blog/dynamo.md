@@ -132,4 +132,4 @@ Dynamo采用类Gossip协议来实现去中心化的故障检测，使系统中�
 [Amazon Dynamo系统架构](http://www.linuxeye.com/architecture/1679.html)
 [Dynamo分布式系统](http://blog.jqian.net/post/dynamo.html)
 
-[TOC]
+

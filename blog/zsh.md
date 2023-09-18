@@ -58,4 +58,4 @@ unset CHECK_ZSH_INSTALLED
 保存后退出，运行`sh install.sh`完成安装。
 
 
-[TOC]
+

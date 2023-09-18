@@ -107,4 +107,3 @@ Python的网络库很容易上手抓取网页数据，这里只是简单的应�
 [生成网页文件源码](../../static/stock/generateHTML.py)
 
 
-[TOC]

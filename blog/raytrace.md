@@ -1069,4 +1069,3 @@ $\vec b = \vec a - 2(\vec a\cdot \vec n)\vec n$
 
 
 
-[TOC]

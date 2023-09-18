@@ -75,5 +75,5 @@ Since there are so many ways earning money from free software, I think it helps 
 
 So what do you think?
 
-[TOC]
+
 

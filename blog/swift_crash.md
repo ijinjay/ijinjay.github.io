@@ -13,4 +13,4 @@ keywords:   dyld,swift,rpath,dyld: Library not loaded: @rpath/libswiftCore.dylib
 
 ![](http://ijinjay.github.io/images/keychain_trust.png)
 
-[TOC]
+

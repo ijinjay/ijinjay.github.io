@@ -92,4 +92,3 @@ yaxs="i" Axis styles for the x and y axes, respectively. With styles "i" (intern
 | filehash | 实现了简单的key-value数据库，在其中特征字符串key与存储在硬盘中的数据value相关联。 |
 | RODBC, RMySQL, ROracle, RPostgreSQL, RSQLite | 可以用这些包读取外部关系数据库管理系统的数据 |
 
-[TOC]
