@@ -2,7 +2,7 @@ author: Jin Jay
 title: Fix iPhone Camera Shaking
 Date: 2023-09-25
 description: Use magnet to fix the iphone camera shaking problem.
-keywords: iPhone, camera, shaking, noise, blue
+keywords: iPhone, camera, shaking, noise, blur
 
 # Problem
 Recently, my iPhone XS Max has trouble focusing and producing noise. When I take photos, the camera is shaking and the photo is blurred. I have tried to clean the camera lens, but it doesn't work. I have also tried to restart the phone, but it doesn't work either. The images are like this:
