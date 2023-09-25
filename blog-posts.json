@@ -1,5 +1,22 @@
 [
   {
+    "id": "fix_iphone_camera_blur.md",
+    "title": "Fix iPhone Camera Shaking",
+    "description": "Use magnet to fix the iphone camera shaking problem.",
+    "date": "2023-09",
+    "url": "#/blog/fix_iphone_camera_blur.md",
+    "body": "Use magnet to fix the iphone camera shaking problem.",
+    "createdAt": "2023-09-25",
+    "tagList": [
+      "iPhone",
+      " camera",
+      " shaking",
+      " noise",
+      " blue"
+    ],
+    "slug": "fix_iphone_camera_blur.md"
+  },
+  {
     "id": "blog_v2.md",
     "title": "个人网站V2",
     "description": "个人网站V2重构记录。基于refinedev的示例开发。",
