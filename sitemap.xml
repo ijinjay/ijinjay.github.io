@@ -2,377 +2,377 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://ijinjay.github.io/</loc>
-		<lastmod>2023-09-25</lastmod>
+		<lastmod>2023-10-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://ijinjay.github.io/#/about</loc>
-		<lastmod>2023-09-25</lastmod>
+		<lastmod>2023-10-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	
     <url>
         <loc>https://ijinjay.github.io/#/blog/fix_iphone_camera_blur.md</loc>
-        <lastmod>2023-09</lastmod>
+        <lastmod>2023-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/blog_v2.md</loc>
-        <lastmod>2023-07</lastmod>
+        <lastmod>2023-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/torch2trt.md</loc>
-        <lastmod>2020-10</lastmod>
+        <lastmod>2020-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/rovio.md</loc>
-        <lastmod>2017-07</lastmod>
+        <lastmod>2017-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/estimation.md</loc>
-        <lastmod>2017-07</lastmod>
+        <lastmod>2017-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/compare_imu.md</loc>
-        <lastmod>2017-07</lastmod>
+        <lastmod>2017-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/android_gradle_cmake.md</loc>
-        <lastmod>2017-04</lastmod>
+        <lastmod>2017-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/cmake.md</loc>
-        <lastmod>2017-04</lastmod>
+        <lastmod>2017-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/tango.md</loc>
-        <lastmod>2017-03</lastmod>
+        <lastmod>2017-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/ceres.md</loc>
-        <lastmod>2016-12</lastmod>
+        <lastmod>2016-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/samza.md</loc>
-        <lastmod>2016-05</lastmod>
+        <lastmod>2016-05-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/dynamo.md</loc>
-        <lastmod>2016-05</lastmod>
+        <lastmod>2016-05-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/raytrace.md</loc>
-        <lastmod>2016-04</lastmod>
+        <lastmod>2016-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/zsh.md</loc>
-        <lastmod>2016-04</lastmod>
+        <lastmod>2016-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/swarm_intelligence.md</loc>
-        <lastmod>2016-01</lastmod>
+        <lastmod>2016-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/gensim.md</loc>
-        <lastmod>2015-11</lastmod>
+        <lastmod>2015-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/swift_crash.md</loc>
-        <lastmod>2015-08</lastmod>
+        <lastmod>2015-08-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/nginx.md</loc>
-        <lastmod>2015-04</lastmod>
+        <lastmod>2015-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/mysql.md</loc>
-        <lastmod>2015-04</lastmod>
+        <lastmod>2015-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/SceneKit.md</loc>
-        <lastmod>2015-03</lastmod>
+        <lastmod>2015-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/iOS_Capture_View.md</loc>
-        <lastmod>2015-02</lastmod>
+        <lastmod>2015-02-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/iOSHideStatusBar.md</loc>
-        <lastmod>2015-01</lastmod>
+        <lastmod>2015-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/ios_uiimagepicker.md</loc>
-        <lastmod>2015-01</lastmod>
+        <lastmod>2015-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/ios_gcd.md</loc>
-        <lastmod>2015-01</lastmod>
+        <lastmod>2015-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/improvePython.md</loc>
-        <lastmod>2014-11</lastmod>
+        <lastmod>2014-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/mac.md</loc>
-        <lastmod>2014-11</lastmod>
+        <lastmod>2014-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/dict.md</loc>
-        <lastmod>2014-11</lastmod>
+        <lastmod>2014-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/gitserver.md</loc>
-        <lastmod>2014-11</lastmod>
+        <lastmod>2014-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/browser.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/linearAlgebra.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/MPI.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/regex.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/codecomplete.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/pptpVPN.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/Linux.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/gupiao.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/git.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/sitemap.md</loc>
-        <lastmod>2014-10</lastmod>
+        <lastmod>2014-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/oop.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/Probability.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/zhihu.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/Django_Tornado.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/zidonghua.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/Caculus.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/CReview.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/baoyan.md</loc>
-        <lastmod>2014-09</lastmod>
+        <lastmod>2014-09-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/stern.md</loc>
-        <lastmod>2014-08</lastmod>
+        <lastmod>2014-08-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/getFile.md</loc>
-        <lastmod>2014-08</lastmod>
+        <lastmod>2014-08-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/final_editorial.md</loc>
-        <lastmod>2014-08</lastmod>
+        <lastmod>2014-08-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/tcpparser.md</loc>
-        <lastmod>2014-05</lastmod>
+        <lastmod>2014-05-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/learn_R.md</loc>
-        <lastmod>2014-05</lastmod>
+        <lastmod>2014-05-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://ijinjay.github.io/#/blog/learn_Scheme.md</loc>
-        <lastmod>2014-05</lastmod>
+        <lastmod>2014-05-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
