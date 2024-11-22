@@ -1,7 +1,9 @@
 
-I am a software engineer, working on autonomous driving industry. My research areas include computer vision and software engineering. 
+I am a software engineer, working on AI + medicial industry. My research areas include computer vision and software engineering. 
 
-- From 2023.12, I join [Horizon Robotics](https://horizon.cc), as a senior software engineer, designing algorithms to aggregate map data from multiple sources such as SD map, HD map and BEVNet perception.
+- From 2024.07, I join [SZJ-AI](https://szj-ai.com), as R&D Director, leading the industrialization of Musculoskeletal Ultrasound AI.
+
+- From 2023.12-2024.07, I worked at [Horizon Robotics](https://horizon.cc), as a senior software engineer, designing algorithms to aggregate map data from multiple sources such as SD map, HD map and BEVNet perception.
 
 - From 2022.05-2023.12, I worked at [AutoX](https://autox.ai), as a full-stack software engineer, working on autonomous driving mapping infra. Representative work includes map tiling system, map hot reloading.
 
