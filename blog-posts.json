@@ -1,5 +1,24 @@
 [
   {
+    "id": "blog_v3.md",
+    "title": "个人网站 V3 — HeroUI + Vite + 暗色主题",
+    "description": "从 CRA + Ant Design 全面升级至 Vite + HeroUI v3 + Tailwind v4，新增搜索、暗色主题自适应、重构 Timeline 等。",
+    "date": "2026-08-16",
+    "url": "#/blog/blog_v3.md",
+    "body": "从 CRA + Ant Design 全面升级至 Vite + HeroUI v3 + Tailwind v4，新增搜索、暗色主题自适应、重构 Timeline 等。",
+    "createdAt": "2026-08-16",
+    "tagList": [
+      "blog",
+      " refine",
+      " HeroUI",
+      " Vite",
+      " Tailwind",
+      " dark mode",
+      " react 19"
+    ],
+    "slug": "blog_v3.md"
+  },
+  {
     "id": "fix_iphone_camera_blur.md",
     "title": "Fix iPhone Camera Shaking",
     "description": "Use magnet to fix the iphone camera shaking problem.",
